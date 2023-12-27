@@ -27,4 +27,6 @@ object ReversingList extends App {
     rev(Nil,list)
   }
   print(reverse(List(2,4,7,9,0)))
+
+
 }
