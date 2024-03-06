@@ -18,5 +18,6 @@ case class ShapesUsingCaseClasses(name:String) {
     println(s"Area of $name ${0.5 * base * height}")
   }
 
+
 }
 

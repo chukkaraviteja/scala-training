@@ -5,7 +5,7 @@ object AllShapes extends App {
     def area(): Double // def manage:unit
   }
 
-  case class Circle(radius: Double) extends DifferentShapes { //doctor
+  case class Circle(radius: Double=5) extends DifferentShapes { //doctor
     override def area: Double = {
       math.Pi * radius * radius
     }
@@ -30,6 +30,27 @@ object AllShapes extends App {
   val square= Square(5.8)
   val triangle= Triangle(2.5)
   println(triangle.area)
+
+  trait A {
+    def name
+  }
+  trait B extends A{
+    def name  = println("B")
+  }
+  trait C extends A {
+    def name  = println("C")
+  }
+  trait E extends A {
+    def name  = println("E")
+  }
+  class D extends C with E with B {
+    override def name  = super.name
+  }
+
+  val ad = new D
+  println(ad.name)
+
+
 }
 
 

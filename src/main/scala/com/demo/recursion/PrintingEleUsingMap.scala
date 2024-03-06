@@ -1,4 +1,6 @@
-package com.demo
+package com.demo.recursion
+
+import scala.collection.View.Empty
 
 object PrintingEleUsingMap extends App{
 
@@ -10,5 +12,7 @@ object PrintingEleUsingMap extends App{
   //using for loop
   for(el<-list){
     print(s"$el,")
+
   }
+  println()
 }

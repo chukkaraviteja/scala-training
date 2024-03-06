@@ -32,7 +32,7 @@ object GenTypes extends App {
     }
   }
 
-  val myList = List(1, 2, 2, 3, 4, 4, 5)
+  val myList = List("a","b","c","a","b","c","b","b")
   val uniqueList = removeDuplicates(myList)
   println(uniqueList)
 
